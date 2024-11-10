@@ -1,0 +1,31 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+env/
+venv/
+.rasa_venv/
+*.env
+
+# Rasa cache and temporary files
+*.db
+*.db-shm
+*.db-wal
+*.lock
+*.sqlite
+results/
+logs/
+models/
+.rasa/
+.config/
+
+# Other configuration and IDE files
+*.log
+*.swp
+.vscode/
+.idea/
+.DS_Store
+*.iml
