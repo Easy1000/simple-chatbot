@@ -8,26 +8,33 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - inquire_services_pricing
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Hey! How are you?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+    - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am a bot, powered by Rasa."
+
+  utter_inquire_services_pricing:
+    - text: "We offer a range of services tailored to your needs. Please let me know which service you're interested in learning more about."
+
+  utter_provide_services_summary:
+    - text: "Here’s an overview of our services:\n1. **Web Development** - Starting at $1000 for basic setups.\n2. **Mobile App Development** - From $1500 depending on features.\n3. **SEO and Marketing** - Packages starting at $500.\nPlease let me know if you’d like more details about any specific service!"
 
 session_config:
   session_expiration_time: 60
