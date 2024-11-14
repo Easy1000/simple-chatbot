@@ -18,6 +18,7 @@ venv/
 *.sqlite
 results/
 logs/
+models/
 .rasa/
 .config/
 
