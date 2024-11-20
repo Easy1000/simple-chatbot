@@ -11,6 +11,27 @@ intents:
   - inquire_services_pricing
   - request_profile_background
   - request_links_resources
+  - recommend_services
+  - schedule_meeting
+
+entities:
+  - meeting_time
+  - date
+
+slots:
+  meeting_time:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: meeting_time
+
+  date:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: date
 
 responses:
   utter_greet:
@@ -52,6 +73,27 @@ responses:
         - **Portfolio**: [https://yourportfolio.com](https://yourportfolio.com)
         - **Website**: [https://yourwebsite.com](https://yourwebsite.com)
         - **Recent Projects**: [https://github.com/yourusername/recent-project](https://github.com/yourusername/recent-project)
+
+  utter_service_recommendation:
+    - text: |
+        Based on your interest in {visitor_need}, I recommend these services:
+        - **Web Development**: Custom websites and web apps tailored to your needs.
+        - **SEO Optimization**: Enhance your online visibility and rankings.
+        - **Consulting**: One-on-one sessions to guide your projects.
+
+        To discuss further, I can help set up a meeting with you. Would you like to share your availability or contact details?
+
+  utter_schedule_meeting:
+    - text: |
+        Sure! I can assist with scheduling a meeting. Could you let me know your preferred date and time?
+    - text: |
+        Let me check the availability for {date} at {meeting_time}. I’ll confirm shortly.
+
+  utter_confirm_meeting:
+    - text: |
+        The meeting is scheduled for {date} at {meeting_time}. If there are any changes, feel free to let me know!
+    - text: |
+        Thank you! The time slot on {date} at {meeting_time} has been confirmed. Looking forward to connecting with you!
 
 session_config:
   session_expiration_time: 60

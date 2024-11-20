@@ -24,3 +24,14 @@ rules:
     steps:
       - intent: request_links_resources
       - action: utter_links
+
+  - rule: Respond to personalized service request
+    steps:
+      - intent: recommend_services
+      - action: utter_service_recommendation
+
+  - rule: Schedule a meeting
+    steps:
+      - intent: schedule_meeting
+      - action: utter_schedule_meeting
+      - action: utter_confirm_meeting

@@ -43,3 +43,20 @@ stories:
     steps:
       - intent: request_links_resources
       - action: utter_links
+
+  - story: Provide personalized service recommendations
+    steps:
+      - intent: recommend_services
+      - action: utter_service_recommendation
+
+  - story: Schedule a meeting with confirmation
+    steps:
+      - intent: schedule_meeting
+        entities:
+          - meeting_time: "3 PM"
+          - date: "12th November"
+      - action: utter_schedule_meeting
+      - slot_was_set:
+          - meeting_time: "3 PM"
+          - date: "12th November"
+      - action: utter_confirm_meeting

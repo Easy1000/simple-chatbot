@@ -121,3 +121,24 @@ nlu:
       - Give me links to your professional profiles
       - Do you have a portfolio or website?
       - Share your LinkedIn link, please
+
+  - intent: recommend_services
+    examples: |
+      - I'm looking for help with web development
+      - Can you suggest a solution for improving online visibility?
+      - Do you offer services for mobile app development?
+      - I need help with SEO optimization
+      - What services can you recommend for e-commerce projects?
+      - Can you provide solutions for business analytics?
+      - I am interested in consulting services
+      - Suggest services that suit my needs
+
+  - intent: schedule_meeting
+    examples: |
+      - I want to schedule a meeting
+      - Can we set up a meeting for tomorrow at 3 PM?
+      - I’m free on Friday at 10 AM
+      - Let's arrange a meeting on the 12th of November at 2 PM
+      - How about scheduling a call for next Monday at 4 PM?
+      - Can we meet on Tuesday at 11:30 AM?
+      - I'd like to book a meeting for 15th November at 9 AM
