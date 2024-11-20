@@ -39,3 +39,8 @@ rules:
     steps:
       - intent: confirm_meeting
       - action: utter_confirm_meeting
+
+  - rule: Respond to work samples request
+    steps:
+      - intent: request_work_samples
+      - action: utter_describe_work_samples

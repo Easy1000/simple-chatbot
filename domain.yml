@@ -14,6 +14,7 @@ intents:
   - recommend_services
   - confirm_meeting
   - schedule_meeting
+  - request_work_samples
 
 entities:
   - meeting_time
@@ -95,6 +96,10 @@ responses:
         The meeting is scheduled for {date} at {meeting_time}. If there are any changes, feel free to let me know!
     - text: |
         Thank you! The time slot on {date} at {meeting_time} has been confirmed. Looking forward to connecting with you!
+
+  utter_describe_work_samples:
+    - text: |
+        Here’s an example: I developed a project that focused on web development for an e-commerce platform. It involved creating responsive interfaces and secure payment integrations. Let me know if you’d like to hear about other examples.
 
 session_config:
   session_expiration_time: 60

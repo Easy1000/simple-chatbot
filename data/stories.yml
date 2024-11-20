@@ -61,3 +61,8 @@ stories:
           - meeting_time: "3 PM"
           - date: "12th November"
       - action: utter_confirm_meeting
+
+  - story: Respond to work sample request
+    steps:
+      - intent: request_work_samples
+      - action: utter_describe_work_samples
