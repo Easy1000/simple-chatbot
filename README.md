@@ -42,3 +42,15 @@ docker run -it -u root --rm -v $(pwd):/app -w /app rasa/rasa shell
 ## Development
 
 Follow the [docs](https://rasa.com/docs/rasa/) by Rasa to implement new features to this chatbot
+
+## API
+
+API for this chatbot is at `http://localhost:5005/webhooks/rest/webhook`
+
+Example of POST request:
+
+```bash
+curl -XPOST http://localhost:5005/webhooks/rest/webhook \
+  -H "Content-type: application/json" \
+  -d '{"sender": "test", "message": "hello"}'
+```
