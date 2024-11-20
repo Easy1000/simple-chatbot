@@ -99,3 +99,14 @@ nlu:
       - I'd like to know about your pricing
       - Tell me about your offerings
       - Could I get a summary of your services and prices?
+
+  - intent: request_profile_background
+    examples: |
+      - Can you share your profile?
+      - Tell me about your professional background
+      - What is your educational qualification?
+      - I'd like to know your experience
+      - Could you provide your key achievements?
+      - Share details about your work history
+      - What is your background in the industry?
+      - Tell me about your professional profile

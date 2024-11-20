@@ -33,3 +33,8 @@ stories:
       - intent: inquire_services_pricing
       - action: utter_inquire_services_pricing
       - action: utter_provide_services_summary
+
+  - story: Provide profile background information
+    steps:
+      - intent: request_profile_background
+      - action: utter_profile_background

@@ -9,6 +9,7 @@ intents:
   - mood_unhappy
   - bot_challenge
   - inquire_services_pricing
+  - request_profile_background
 
 responses:
   utter_greet:
@@ -35,6 +36,13 @@ responses:
 
   utter_provide_services_summary:
     - text: "Here’s an overview of our services:\n1. **Web Development** - Starting at $1000 for basic setups.\n2. **Mobile App Development** - From $1500 depending on features.\n3. **SEO and Marketing** - Packages starting at $500.\nPlease let me know if you’d like more details about any specific service!"
+
+  utter_profile_background:
+    - text: |
+        Here's a summary of my profile:
+        - **Education**: Bachelor's in Computer Science from Stanford University.
+        - **Experience**: 4 years in software engineering, including web and mobile development.
+        - **Key Achievements**: Developed an AI-driven chatbot for customer service, saving 20% operational costs.
 
 session_config:
   session_expiration_time: 60

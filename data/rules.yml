@@ -1,5 +1,3 @@
-version: "3.1"
-
 rules:
   - rule: Say goodbye anytime the user says goodbye
     steps:
@@ -16,3 +14,8 @@ rules:
       - intent: inquire_services_pricing
       - action: utter_inquire_services_pricing
       - action: utter_provide_services_summary
+
+  - rule: Respond to profile background request
+    steps:
+      - intent: request_profile_background
+      - action: utter_profile_background
