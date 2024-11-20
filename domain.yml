@@ -10,6 +10,7 @@ intents:
   - bot_challenge
   - inquire_services_pricing
   - request_profile_background
+  - request_links_resources
 
 responses:
   utter_greet:
@@ -43,6 +44,14 @@ responses:
         - **Education**: Bachelor's in Computer Science from Stanford University.
         - **Experience**: 4 years in software engineering, including web and mobile development.
         - **Key Achievements**: Developed an AI-driven chatbot for customer service, saving 20% operational costs.
+
+  utter_links:
+    - text: |
+        Here are some useful links to learn more about me:
+        - **LinkedIn**: [https://linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+        - **Portfolio**: [https://yourportfolio.com](https://yourportfolio.com)
+        - **Website**: [https://yourwebsite.com](https://yourwebsite.com)
+        - **Recent Projects**: [https://github.com/yourusername/recent-project](https://github.com/yourusername/recent-project)
 
 session_config:
   session_expiration_time: 60

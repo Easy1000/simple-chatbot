@@ -110,3 +110,14 @@ nlu:
       - Share details about your work history
       - What is your background in the industry?
       - Tell me about your professional profile
+
+  - intent: request_links_resources
+    examples: |
+      - Can you share your LinkedIn profile?
+      - I want to see your portfolio
+      - Do you have a website I can visit?
+      - Could you provide links to your recent projects?
+      - Where can I find your GitHub projects?
+      - Give me links to your professional profiles
+      - Do you have a portfolio or website?
+      - Share your LinkedIn link, please

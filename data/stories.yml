@@ -38,3 +38,8 @@ stories:
     steps:
       - intent: request_profile_background
       - action: utter_profile_background
+
+  - story: Provide links or resources
+    steps:
+      - intent: request_links_resources
+      - action: utter_links

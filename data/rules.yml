@@ -19,3 +19,8 @@ rules:
     steps:
       - intent: request_profile_background
       - action: utter_profile_background
+
+  - rule: Respond to link/resource request
+    steps:
+      - intent: request_links_resources
+      - action: utter_links
