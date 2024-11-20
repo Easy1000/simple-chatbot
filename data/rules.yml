@@ -34,4 +34,8 @@ rules:
     steps:
       - intent: schedule_meeting
       - action: utter_schedule_meeting
+
+  - rule: Confirm a meeting
+    steps:
+      - intent: confirm_meeting
       - action: utter_confirm_meeting

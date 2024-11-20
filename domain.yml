@@ -12,6 +12,7 @@ intents:
   - request_profile_background
   - request_links_resources
   - recommend_services
+  - confirm_meeting
   - schedule_meeting
 
 entities:
