@@ -136,9 +136,39 @@ nlu:
   - intent: schedule_meeting
     examples: |
       - I want to schedule a meeting
-      - Can we set up a meeting for tomorrow at 3 PM?
-      - I’m free on Friday at 10 AM
-      - Let's arrange a meeting on the 12th of November at 2 PM
-      - How about scheduling a call for next Monday at 4 PM?
-      - Can we meet on Tuesday at 11:30 AM?
-      - I'd like to book a meeting for 15th November at 9 AM
+      - Can we arrange a meeting?
+      - I’d like to book a time to talk
+      - Let's set up a meeting
+      - I need to schedule a call with you
+      - Can we set up a discussion?
+      - I’d like to arrange a meeting with you
+      - How can I schedule a meeting with you?
+      - Could we plan a meeting?
+      - I want to book a meeting with you
+      - I’d like to connect further
+      - Can we organize a meeting?
+      - I’d like to discuss more in a meeting
+      - How do I set up a meeting with you?
+      - I’m interested in scheduling a discussion
+      - Is it possible to schedule a meeting?
+      - Let’s plan a meeting to talk more
+      - I’d like to have a discussion with you
+
+  - intent: confirm_meeting
+    examples: |
+      - Can we set up a meeting for [tomorrow](date) at [3 PM](meeting_time)?
+      - I’m free on [Friday](date) at [10 AM](meeting_time)
+      - Let's arrange a meeting on the [12th of November](date) at [2 PM](meeting_time)
+      - How about scheduling a call for next [Monday](date) at [4 PM](meeting_time)?
+      - Can we meet on [Tuesday](date) at 11:30 AM](meeting_time)?
+      - I'd like to book a meeting for [15th November](date) at [9 AM](meeting_time)
+
+  - intent: request_work_samples
+    examples: |
+      - Can you show me some of your portfolio?
+      - Do you have examples of your recent work?
+      - Share a project that you are proud of
+      - What kind of work have you done recently?
+      - Show me some of your best projects
+      - Do you have any examples of your projects?
+      - Tell me about your previous work
