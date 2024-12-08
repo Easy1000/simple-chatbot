@@ -30,13 +30,13 @@ This will create the docker container and train a new model inside the container
 Train new model:
 
 ```bash
-docker run -it -u root --rm -v $(pwd):/app -w /app rasa/rasa train --domain domain.yml --data data --out models
+docker run -it -u root --rm -v $(pwd):/app -w /app rasa/rasa:3.6.20 train --domain domain.yml --data data --out models
 ```
 
 Interact with newest model in the shell:
 
 ```bash
-docker run -it -u root --rm -v $(pwd):/app -w /app rasa/rasa shell
+docker run -it -u root --rm -v $(pwd):/app -w /app rasa/rasa:3.6.20 shell
 ```
 
 ## Development
