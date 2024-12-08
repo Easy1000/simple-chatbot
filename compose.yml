@@ -5,8 +5,4 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5005:5005"
-    volumes:
-      - .:/app
-    working_dir: /app
     container_name: chatbot
-    command: run
