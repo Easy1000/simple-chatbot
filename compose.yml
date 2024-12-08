@@ -6,3 +6,13 @@ services:
     ports:
       - "5005:5005"
     container_name: chatbot
+    depends_on:
+      - action-server
+
+  action-server:
+    image: rasa/rasa-sdk:3.6.2
+    expose:
+      - "5055"
+    volumes:
+      - ./actions:/app/actions
+    container_name: action-server
