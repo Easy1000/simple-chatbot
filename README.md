@@ -54,3 +54,8 @@ curl -XPOST http://localhost:5005/webhooks/rest/webhook \
   -H "Content-type: application/json" \
   -d '{"sender": "test", "message": "hello"}'
 ```
+
+JSON payload details:
+
+- sender: is the sender id, used by Rasa to keep tract multiple conversations
+- message: message sent by user in the chat room, used to trigger certain action
