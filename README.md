@@ -57,5 +57,5 @@ curl -XPOST http://localhost:5005/webhooks/rest/webhook \
 
 JSON payload details:
 
-- sender: is the sender id, used by Rasa to keep tract multiple conversations
+- sender: is the sender id, used by Rasa to keep tract multiple conversations (**IMPORTANT**: sender field will be used as sender id/session id for Rasa to keep track of conversation, preferrably act as identification of customer and the user/freelancer)
 - message: message sent by user in the chat room, used to trigger certain action
