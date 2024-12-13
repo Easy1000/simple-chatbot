@@ -43,6 +43,18 @@ docker run -it -u root --rm -v $(pwd):/app -w /app rasa/rasa:3.6.20 shell
 
 Follow the [docs](https://rasa.com/docs/rasa/) by Rasa to implement new features to this chatbot
 
+## Current Available Intents
+
+- inquire service pricing
+- request profile background
+- request link resources
+- recommend services
+- confirm meeting
+- schedule meeting
+- request work samples
+
+Available in [domain.yml](./domain.yml) and [nlu.yml](./data/nlu.yml)
+
 ## API
 
 API for this chatbot is at `http://localhost:5005/webhooks/rest/webhook`
